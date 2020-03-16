@@ -14,7 +14,9 @@ WHERE OrderDate
 Order BY OrderDate DESC
 LIMIT 10;
 
--- Find all customers that live in London, Madrid, or Brazil
+-- Find all customers that live in London, Madrid, or 
+SELECT * FROM [Customers]
+WHERE Country = 'Brazil' or City = 'Madrid' or City = 'London';
 
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
 
